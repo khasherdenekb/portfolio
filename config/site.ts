@@ -3,7 +3,7 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "Khash-Erdene 'B",
   description: "Software engineer & developer | fullstack | web | mobile",
-  image: "/public/assets/cover.png",
+  image: "",
   navItems: [
     {
       label: "Home",

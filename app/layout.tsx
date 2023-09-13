@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    images: siteConfig.image,
+    images: "/public/assets/cover.png",
   },
 };
 
