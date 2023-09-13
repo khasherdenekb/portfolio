@@ -30,8 +30,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <meta property="og:image" content={cover.src} />
       <head />
+      <meta
+        property="og:image"
+        content={
+          "https://res.cloudinary.com/practicaldev/image/fetch/s--iH-ctzLt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdkt1q9bfasatrg8d2g4.png"
+        }
+      />
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
