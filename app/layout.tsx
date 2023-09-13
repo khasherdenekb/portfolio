@@ -21,21 +21,21 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Next.js",
-    description: "The React Framework for the Web",
-    url: "https://nextjs.org",
-    siteName: "Next.js",
+    title: "Portfolio",
+    description: "Junior Software Developer",
+    siteName: "Portfolio",
     images: [
       {
-        url: "https://nextjs.org/og.png",
+        url: "/public/assets/cover.png",
         width: 800,
         height: 600,
+        alt: "web cover photo",
       },
       {
-        url: "https://nextjs.org/og-alt.png",
+        url: "/public/assets/cover.png",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "web cover photo",
       },
     ],
     locale: "en_US",
