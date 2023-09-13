@@ -5,6 +5,7 @@ import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import clsx from "clsx";
+import cover from "../public/assets/cover.png";
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -29,10 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <meta
-        property="og:image"
-        content={require("@/public/assets/cover.png")}
-      />
+      <meta property="og:image" content={cover.src} />
       <head />
       <body
         className={clsx(
