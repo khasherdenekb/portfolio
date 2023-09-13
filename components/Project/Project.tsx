@@ -6,8 +6,9 @@ import { github_projects } from "@/config/data/github_projects";
 export default function ProjectSection() {
   return (
     <div className="w-[88vw] gap-2 grid grid-cols-12 grid-rows-2 px-8">
-      {github_projects.map((project) => (
+      {github_projects.map((project, key) => (
         <Card
+          key={key}
           isFooterBlurred
           className="col-span-12 sm:col-span-4 h-[40vh] cursor-pointer"
         >

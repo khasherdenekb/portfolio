@@ -12,7 +12,6 @@ import AboutPage from "@/components/About/AboutMain";
 import Project from "@/components/Project/ProjectMain";
 
 export default function Home() {
-  const height = window.innerHeight;
   return (
     <>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 h-[100vh] lg:h-[90vh]">
@@ -66,14 +65,14 @@ export default function Home() {
       <section
         id="about"
         className={` flex flex-col items-center justify-center gap-4 py-20 md:py-10 h-[${
-          height * 2
+          window.innerHeight * 2
         }] sm:h-[100vh]`}
       >
         <AboutPage />
       </section>
       <section
         className={`flex flex-col items-center justify-center gap-4 py-20 md:py-10 h-[${
-          height * 2
+          window.innerHeight * 2
         }] sm:h-[100vh]`}
         id="projects"
       >

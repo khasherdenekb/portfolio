@@ -2,11 +2,10 @@ import AboutMe from "@/components/About/AboutMe";
 import AboutSkills from "@/components/About/AboutSkills";
 
 const AboutPage = () => {
-  const height = window.innerHeight;
   return (
     <section
       className={`flex flex-col justify-evenly h-[${
-        height * 2
+        window.innerHeight * 2
       }] w-[80vw] md:h-[85vh] lg:h-[75vh] xl:h-[70vh]`}
     >
       Introduction

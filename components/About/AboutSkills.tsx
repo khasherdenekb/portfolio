@@ -14,8 +14,8 @@ import { skills } from "@/config/data/skills";
 export default function AboutSkills() {
   return (
     <section className="flex w-[80vw] gap-5 flex-col md:flex-row">
-      {skills.map((el) => (
-        <Card className="min-w-[22vw] min-h-[15vh] h-full">
+      {skills.map((el, key) => (
+        <Card key={key} className="min-w-[22vw] min-h-[15vh] h-full">
           <CardHeader className="flex gap-3">
             <Image
               alt="nextui logo"
@@ -36,8 +36,8 @@ export default function AboutSkills() {
           </CardBody>
           <Divider />
           <CardFooter className="flex flex-wrap gap-2">
-            {el.skills.map((skill) => (
-              <Chip>{skill}</Chip>
+            {el.skills.map((skill, key) => (
+              <Chip key={key}>{skill}</Chip>
             ))}
           </CardFooter>
         </Card>
