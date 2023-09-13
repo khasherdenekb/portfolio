@@ -20,27 +20,6 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-  openGraph: {
-    title: "Portfolio",
-    description: "Junior Software Developer",
-    siteName: "Portfolio",
-    images: [
-      {
-        url: "/public/assets/cover.png",
-        width: 800,
-        height: 600,
-        alt: "web cover photo",
-      },
-      {
-        url: "/public/assets/cover.png",
-        width: 1800,
-        height: 1600,
-        alt: "web cover photo",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
 };
 
 export default function RootLayout({
@@ -50,6 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <meta
+        property="og:image"
+        content={require("@/public/assets/cover.png")}
+      />
       <head />
       <body
         className={clsx(
