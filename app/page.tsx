@@ -10,16 +10,18 @@ import { Image } from "@nextui-org/react";
 import typing from "../public/assets/aesthetic-typing.gif";
 import AboutPage from "@/components/About/AboutMain";
 import Project from "@/components/Project/ProjectMain";
+import { useWindowSize } from "usehooks-ts";
 
 export default function Home() {
+  const { height } = useWindowSize();
   return (
     <>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 h-[100vh] lg:h-[90vh]">
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title({ class: "text-[30px] lg:text-[40px]" })}>
-            Hi 👋🏻 I'm&nbsp;
+            Hi 👋🏻 I'm{" "}
           </h1>
-          <h1 className={title({ color: "cyan" })}>Khash-Erdene &nbsp;</h1>
+          <h1 className={title({ color: "cyan" })}>Khash-Erdene</h1>
           <br />
           <h1 className={title()}>sotware engineer</h1>
           <h2 className={subtitle({ class: "mt-2 md:mt-4" })}>
@@ -65,14 +67,14 @@ export default function Home() {
       <section
         id="about"
         className={` flex flex-col items-center justify-center gap-4 py-20 md:py-10 h-[${
-          window.innerHeight * 2
+          height * 2
         }] sm:h-[100vh]`}
       >
         <AboutPage />
       </section>
       <section
         className={`flex flex-col items-center justify-center gap-4 py-20 md:py-10 h-[${
-          window.innerHeight * 2
+          height * 2
         }] sm:h-[100vh]`}
         id="projects"
       >
