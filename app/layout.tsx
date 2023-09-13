@@ -48,7 +48,7 @@ export default function RootLayout({
                 Created by{" "}
               </span>
               <p className="text-primary text-xs sm:text-medium  font-bold">
-                Khash-Erdene &apos;B
+                Khash-Erdene
               </p>
               <span className="text-default-600 text-xs sm:text-medium">
                 © all right reserved {new Date().getFullYear()}
