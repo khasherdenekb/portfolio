@@ -64,12 +64,12 @@ export default function Home() {
       </section>
       <section
         id="about"
-        className={` flex flex-col items-center justify-center gap-4 py-20 md:py-10  sm:h-[100vh]`}
+        className={` flex flex-col items-center justify-center gap-4 py-20 md:py-10 h-[150vh] sm:h-[110vh]`}
       >
         <AboutPage />
       </section>
       <section
-        className={`flex flex-col items-center justify-center gap-4 py-20 md:py-10  sm:h-[100vh]`}
+        className={`flex flex-col items-center justify-center gap-4 py-20 md:py-10  sm:h-[140vh] md:h-[110vh] lg:h-[82vh]`}
         id="projects"
       >
         <Project />
