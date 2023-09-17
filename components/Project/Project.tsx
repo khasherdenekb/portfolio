@@ -37,7 +37,7 @@ export default function ProjectSection() {
   ];
 
   return (
-    <div className="w-[88vw] gap-2 grid grid-cols-2 sm:grid-cols-3">
+    <div className="w-[88vw] gap-2 grid grid-cols-1 sm:grid-cols-3">
       {list.map((item, index) => (
         <Card
           shadow="sm"
