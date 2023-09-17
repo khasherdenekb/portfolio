@@ -2,8 +2,10 @@
 import React from "react";
 import { Card, CardBody, Image, Tabs, Tab } from "@nextui-org/react";
 import { skills } from "@/config/data/skills";
+import { useWindowSize } from "usehooks-ts";
 
 export default function AboutMe() {
+  const { height } = useWindowSize();
   return (
     <section className="justify-center flex flex-col sm:flex-row sm:justify-between h-[100vh] items-center gap-[4vw]">
       <div className="w-[80vw] sm:w-[46vw] sm:h-[75vh]">
@@ -13,7 +15,7 @@ export default function AboutMe() {
           src="https://static.vecteezy.com/system/resources/previews/019/153/003/original/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png"
         />
       </div>
-      <div className="w-[80vw] sm:w-[46vw] h-[80vh] flex flex-col gap-5">
+      <div className="w-[80vw] sm:w-[46vw] h-[110vh] sm:h-[80vh] flex flex-col gap-5">
         <Card>
           <CardBody>
             <h3 className=" font-bold text-[20px] sm:text-[38px]">ABOUT ME</h3>I
