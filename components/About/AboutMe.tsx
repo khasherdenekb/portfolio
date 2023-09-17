@@ -35,8 +35,8 @@ export default function AboutMe() {
             <Tab key={item.title} title={item.title}>
               <Card>
                 <CardBody>
-                  {item.value.map((el) => {
-                    return <li>{el}</li>;
+                  {item.value.map((el, key) => {
+                    return <li key={key}>{el}</li>;
                   })}
                 </CardBody>
               </Card>
