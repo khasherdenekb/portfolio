@@ -1,42 +1,29 @@
-import { frontend, backend, mobile } from "@/public/assets";
-
 export const skills = [
   {
-    title: "Frontend",
-    description: "Front end development since 2021",
-    image: frontend,
-    skills: [
-      "html",
-      "css",
-      "tailwindcss",
-      "mui",
-      "joyui",
-      "sass",
-      "nodejs",
-      "react",
-      "daisyui",
+    title: "Skills",
+    value: [
+      "MongoDB",
+      "Expressjs",
+      "Reactjs",
+      "Nodejs",
+      "Nextjs",
+      "Html",
+      "Css",
+      "Javascript",
+      "Typescript",
+      "Tailwindcss",
+      "Firebase",
     ],
   },
   {
-    title: "Backend",
-    description: "Back end development since 2022",
-    image: backend,
-    skills: [
-      "firebase",
-      "mongodb",
-      "expressjs",
-      "javascript",
-      "typescript",
-      "aws",
-      "github",
-      "git",
-      "vercel",
-    ],
+    title: "Education",
+    value: ["Pinecone academy"],
   },
   {
-    title: "Mobile Application",
-    description: "Mobile development since 2023",
-    image: mobile,
-    skills: ["expo react native", "nativebaseui", "Github", "git"],
+    title: "Certifications",
+    value: [
+      "JavaScript Algorithms and Data Structures (Freecodecamp)",
+      "Software engineer & fullstack developer (Pinecone academy)",
+    ],
   },
 ];
