@@ -2,10 +2,8 @@
 import React from "react";
 import { Card, CardBody, Image, Tabs, Tab } from "@nextui-org/react";
 import { skills } from "@/config/data/skills";
-import { useWindowSize } from "usehooks-ts";
 
 export default function AboutMe() {
-  const { height } = useWindowSize();
   return (
     <section className="justify-center flex flex-col sm:flex-row sm:justify-between h-[100vh] items-center gap-[4vw]">
       <div className="w-[80vw] sm:w-[46vw] sm:h-[75vh]">

@@ -10,10 +10,8 @@ import { Image } from "@nextui-org/react";
 import typing from "../public/assets/aesthetic-typing.gif";
 import AboutPage from "@/components/About/AboutMain";
 import Project from "@/components/Project/ProjectMain";
-import { useWindowSize } from "usehooks-ts";
 
 export default function Home() {
-  const { height } = useWindowSize();
   return (
     <>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 h-[100vh] lg:h-[90vh]">
@@ -66,16 +64,12 @@ export default function Home() {
       </section>
       <section
         id="about"
-        className={` flex flex-col items-center justify-center gap-4 py-20 md:py-10 h-[${
-          height * 2
-        }] sm:h-[100vh]`}
+        className={` flex flex-col items-center justify-center gap-4 py-20 md:py-10  sm:h-[100vh]`}
       >
         <AboutPage />
       </section>
       <section
-        className={`flex flex-col items-center justify-center gap-4 py-20 md:py-10 h-[${
-          height * 2
-        }] sm:h-[100vh]`}
+        className={`flex flex-col items-center justify-center gap-4 py-20 md:py-10  sm:h-[100vh]`}
         id="projects"
       >
         <Project />
