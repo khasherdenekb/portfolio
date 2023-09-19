@@ -1,37 +1,38 @@
 "use client";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import React from "react";
+import heroCard from "@/public/assets/hero-card-example.jpeg";
 
 export default function ProjectSection() {
   const list = [
     {
       title: "TEST1",
-      img: "https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg",
+      img: heroCard.src,
       tech: "MERN STACK",
     },
     {
       title: "TEST2",
-      img: "https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg",
+      img: heroCard.src,
       tech: "MERN STACK",
     },
     {
       title: "TEST",
-      img: "https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg",
+      img: heroCard.src,
       tech: "MERN STACK",
     },
     {
       title: "TEST",
-      img: "https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg",
+      img: heroCard.src,
       tech: "MERN STACK",
     },
     {
       title: "TEST",
-      img: "https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg",
+      img: heroCard.src,
       tech: "MERN STACK",
     },
     {
       title: "TEST",
-      img: "https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg",
+      img: heroCard.src,
       tech: "MERN STACK",
     },
   ];
