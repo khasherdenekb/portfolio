@@ -5,7 +5,7 @@ import React from "react";
 export default function ProjectSection() {
   const list = [
     {
-      title: "TEST",
+      title: "TEST1",
       img: "https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg",
       tech: "MERN STACK",
     },
