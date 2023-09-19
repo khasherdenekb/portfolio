@@ -5,7 +5,7 @@ import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import clsx from "clsx";
-import cover from "../public/assets/cover.png";
+import cover from "@/public/assets/cover.png";
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
