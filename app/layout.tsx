@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import clsx from "clsx";
 import cover from "../public/assets/cover.png";
+import Footer from "@/components/footer";
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -41,18 +42,8 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-full" id="home">
             <Navbar />
-            <main className="">{children}</main>
-            <footer className="w-full flex items-center justify-center py-3 gap-2 h-[10vh]">
-              <span className="text-default-600 text-xs sm:text-medium">
-                Created by{" "}
-              </span>
-              <p className="text-primary text-xs sm:text-medium  font-bold">
-                Khash-Erdene
-              </p>
-              <span className="text-default-600 text-xs sm:text-medium">
-                © all right reserved {new Date().getFullYear()}
-              </span>
-            </footer>
+            <main>{children}</main>
+            <Footer />
           </div>
         </Providers>
       </body>
