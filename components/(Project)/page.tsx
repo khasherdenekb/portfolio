@@ -10,7 +10,7 @@ export default function ProjectSection() {
       tech: "MERN STACK",
     },
     {
-      title: "TEST",
+      title: "TEST2",
       img: "https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg",
       tech: "MERN STACK",
     },
