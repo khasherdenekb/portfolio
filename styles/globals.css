@@ -9,9 +9,5 @@
 }
 
 .text-gradient_blue-purple {
-  background: linear-gradient(90deg, #4ca5ff 0%, #b573f8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  @apply bg-gradient-to-r from-pink-400 via-teal-300 to-sky-700 bg-clip-text text-transparent;
 }

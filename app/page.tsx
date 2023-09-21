@@ -5,7 +5,7 @@ import ProjectPage from "@/components/(Project)/layout";
 
 export default function Home() {
   return (
-    <section className="">
+    <section className="flex flex-col items-center justify-start gap-4 py-8 md:py-10 min-h-screen">
       <HomePage />
       <AboutPage />
       <ProjectPage />

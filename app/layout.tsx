@@ -6,7 +6,11 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import clsx from "clsx";
 import cover from "@/public/assets/cover.png";
+import Footer from "@/components/footer";
 export const metadata: Metadata = {
+  openGraph: {
+    images: [cover.src],
+  },
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
@@ -30,8 +34,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
-      <meta property="og:image" content={cover.src} />
+      <head>
+        <meta property="og:image" content={cover.src} />
+      </head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
@@ -42,6 +47,7 @@ export default function RootLayout({
           <div className="relative flex flex-col h-full" id="home">
             <Navbar />
             <main>{children}</main>
+            <Footer />
           </div>
         </Providers>
       </body>

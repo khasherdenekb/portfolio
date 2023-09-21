@@ -1,13 +1,19 @@
 "use client";
-import React from "react";
 import { Card, CardBody, Image, Tabs, Tab } from "@nextui-org/react";
 import { skills } from "@/config/data/skills";
-import library from "@/public/assets/library.webp";
+import brain from "@/public/assets/brain.avif";
 
 export default function AboutMe() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0 justify-center h-[100vh] items-center max-w-7xl mx-auto px-6 md:px-12 mb-[20vh] md:mb-0">
-      <div className="w-full max-w-lg h-[30vh] md:h-[50%]">
+    <div className="flex flex-col-reverse md:flex-row max-w-6xl gap-10 md:mt-40 mb-40">
+      <div className="w-full flex flex-col justify-center items-center md:h-96 px-10 xl:px-0">
+        <Image
+          className="w-full object-cover"
+          alt="code photo"
+          src={brain.src}
+        />
+      </div>
+      <div className="flex  gap-10 flex-col w-full px-10 xl:px-0 h-96">
         <Tabs
           key="underlined"
           variant="underlined"
@@ -20,7 +26,7 @@ export default function AboutMe() {
                 <CardBody>
                   {item.value.map((el, key) => {
                     return (
-                      <li className="md:text-xl" key={key}>
+                      <li className=" font-medium" key={key}>
                         {el}
                       </li>
                     );
@@ -31,13 +37,6 @@ export default function AboutMe() {
           )}
         </Tabs>
       </div>
-      <div className="h-[50%] w-full md:h-auto order-first md:order-last">
-        <Image
-          className="w-full object-contain"
-          alt="NextUI hero Image"
-          src={library.src}
-        />
-      </div>
-    </section>
+    </div>
   );
 }

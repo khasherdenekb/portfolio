@@ -41,7 +41,7 @@ export const Navbar = () => {
             <p className="font-bold text-inherit">XASH</p>
           </Link2>
         </NavbarBrand>
-        <ul className="hidden lg:flex gap-4 justify-start ml-2">
+        <ul className="hidden md:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.to}>
               <Link2
