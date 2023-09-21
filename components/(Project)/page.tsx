@@ -42,6 +42,7 @@ export default function ProjectSection() {
           isFooterBlurred
           radius="lg"
           className="border-none cursor-pointer "
+          key={index}
         >
           <Image
             isZoomed
