@@ -1,3 +1,8 @@
+## Website overview
+<img width="1440" alt="Screenshot 2023-09-23 at 23 03 22" src="https://github.com/khasherdeneswe/portfolio/assets/98733664/556fc98c-438a-4724-9d4f-fdb738ce822d">
+
+
+
 ## Technologies Used
 
 - [Next.js 13](https://nextjs.org/docs/getting-started)
@@ -33,4 +38,3 @@ npm run dev
 ## License
 
 Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
-# portfolio
