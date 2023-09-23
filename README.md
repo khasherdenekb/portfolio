@@ -1,7 +1,5 @@
 ## Website overview
-<img width="1440" alt="Screenshot 2023-09-23 at 23 03 22" src="https://github.com/khasherdeneswe/portfolio/assets/98733664/556fc98c-438a-4724-9d4f-fdb738ce822d">
-
-
+![IMG_8603](https://github.com/khasherdeneswe/portfolio/assets/98733664/6875264c-a59a-4d0f-a150-ad2641070440)
 
 ## Technologies Used
 
