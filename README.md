@@ -1,6 +1,3 @@
-## Website overview
-![IMG_8603](https://github.com/khasherdeneswe/portfolio/assets/98733664/6875264c-a59a-4d0f-a150-ad2641070440)
-
 ## Technologies Used
 
 - [Next.js 13](https://nextjs.org/docs/getting-started)
