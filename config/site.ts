@@ -39,7 +39,7 @@ export const siteConfig = {
   ],
   links: {
     github: "https://github.com/khasherdeneswe",
-    linkedin: "https://linkedin.com/khasherdeneswe",
+    linkedin: "https://www.linkedin.com/in/khasherdeneswe",
     leetcode: "https://leetcode.com/khasherdenexash",
     mail: "mailto:khasherdeneswe@gmail.com",
     linktree: "https://linktr.ee/khasherdene",
