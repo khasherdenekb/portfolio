@@ -46,12 +46,11 @@ export default function ProjectSection() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:max-w-6xl mx-auto md:mt-40 mb-40 px-10 xl:px-0">
       {list.map((item, index) => (
-        <Link target="_blank" href={item.link}>
+        <Link key={index} target="_blank" href={item.link}>
           <Card
             isFooterBlurred
             radius="lg"
             className="border-none cursor-pointer h-52"
-            key={index}
           >
             <Image
               isZoomed
