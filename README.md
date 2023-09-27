@@ -1,4 +1,5 @@
 ## Technologies Used
+![screencapture-localhost-3000-2023-09-27-11_06_32](https://github.com/khasherdeneswe/portfolio/assets/98733664/db449659-17a3-444f-893a-9c11e795b46e)
 
 - [Next.js 13](https://nextjs.org/docs/getting-started)
 - [NextUI v2](https://nextui.org/)
