@@ -1,7 +1,7 @@
 "use client";
 import { Card, CardBody, Image, Tabs, Tab } from "@nextui-org/react";
 import { skills } from "@/config/data/skills";
-import brain from "@/public/assets/brain.avif";
+import coding from "@/public/assets/coding.webp";
 
 export default function AboutMe() {
   return (
@@ -10,7 +10,7 @@ export default function AboutMe() {
         <Image
           className="w-full object-cover"
           alt="code photo"
-          src={brain.src}
+          src={coding.src}
         />
       </div>
       <div className="flex  gap-10 flex-col w-full px-10 xl:px-0 h-96">
