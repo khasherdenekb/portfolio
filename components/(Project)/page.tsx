@@ -1,81 +1,114 @@
 "use client";
-import { Button, Card, CardFooter, Image } from "@nextui-org/react";
-import heroCard from "@/public/assets/hero-card-example.jpeg";
+
 import blogCover from "@/public/assets/blogCover.png";
+import nikeCover from "@/public/assets/nikeCover.png";
+import porfolioCover from "@/public/assets/portfolioCover.png";
+import foodCover from "@/public/assets/foodCover.png";
+import netflixCover from "@/public/assets/netflixCover.jpeg";
+
+import React from "react";
+
+import { Card, CardHeader, CardFooter, Image, Button } from "@nextui-org/react";
 import Link from "next/link";
 
-export default function ProjectSection() {
+export default function page() {
   const list = [
     {
-      title: "Blog",
+      title: "BLOG",
       img: blogCover.src,
-      tech: "MERN STACK",
       link: "https://blogkx.vercel.app",
     },
     {
-      title: "TEST2",
-      img: heroCard.src,
-      tech: "MERN STACK",
-      link: "/",
+      title: "NIKE CLONE UI",
+      img: nikeCover.src,
+      link: "https://nikekx.vercel.app",
     },
     {
-      title: "TEST",
-      img: heroCard.src,
-      tech: "MERN STACK",
-      link: "/",
-    },
-    {
-      title: "TEST",
-      img: heroCard.src,
-      tech: "MERN STACK",
-      link: "/",
-    },
-    {
-      title: "TEST",
-      img: heroCard.src,
-      tech: "MERN STACK",
-      link: "/",
-    },
-    {
-      title: "TEST",
-      img: heroCard.src,
-      tech: "MERN STACK",
+      title: "PORTFOLIO",
+      img: porfolioCover.src,
       link: "/",
     },
   ];
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:max-w-6xl mx-auto md:mt-40 mb-40 px-10 xl:px-0">
+    <div className="max-w-6xl w-screen gap-4 grid grid-cols-12 grid-rows-2 mt-40 md:mt-40 mb-40 px-10 xl:px-0">
       {list.map((item, index) => (
-        <Link key={index} target="_blank" href={item.link}>
-          <Card
-            isFooterBlurred
-            radius="lg"
-            className="border-none cursor-pointer h-52"
-          >
+        <Card className="col-span-12 sm:col-span-4 h-fit">
+          <Link key={index} target="_blank" href={item.link}>
+            <CardHeader className="absolute z-10 top-1 flex-col !items-start">
+              <p className="text-tiny text-gray-700 uppercase font-bold">
+                {item?.title}
+              </p>
+            </CardHeader>
             <Image
               isZoomed
-              alt="Woman listing to music"
-              className="object-cover h-full w-full"
+              removeWrapper
+              alt="Card background"
+              className="z-0 w-full h-full object-cover"
               src={item.img}
             />
-
-            <CardFooter className="justify-between border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 shadow-small ml-1 z-10 ">
-              <div className="flex w-full justify-between items-center">
-                <p className="text-tiny ">{item?.title}</p>
-                <Button
-                  className="text-tiny  bg-black/20"
-                  variant="flat"
-                  color="default"
-                  radius="lg"
-                  size="sm"
-                >
-                  MERN STACK
-                </Button>
-              </div>
-            </CardFooter>
-          </Card>
-        </Link>
+          </Link>
+        </Card>
       ))}
-    </section>
+
+      <Card
+        isFooterBlurred
+        className="w-full h-[300px] col-span-12 sm:col-span-5"
+      >
+        <Link target="_blank" href="https://hoollymernapp.web.app">
+          <CardHeader className="absolute z-10 top-1 flex-col items-start">
+            <p className="text-tiny text-white/60 uppercase font-bold">
+              FOOD DELIVERY
+            </p>
+          </CardHeader>
+          <Image
+            removeWrapper
+            isZoomed
+            alt="Card example background"
+            className="z-0 w-full h-full  object-cover"
+            src={foodCover.src}
+          />
+          <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+            <div>
+              <p className="text-black text-tiny">Click and view.</p>
+            </div>
+            <Button
+              className="text-tiny"
+              color="primary"
+              radius="full"
+              size="sm"
+            >
+              MERN STACK
+            </Button>
+          </CardFooter>
+        </Link>
+      </Card>
+      <Card
+        isFooterBlurred
+        className="w-full h-[300px] col-span-12 sm:col-span-7"
+      >
+        <CardHeader className="absolute z-10 top-1 flex-col items-start">
+          <p className="text-tiny text-white/60 uppercase font-bold">
+            Netflix clone
+          </p>
+        </CardHeader>
+        <Image
+          isZoomed
+          removeWrapper
+          alt="Relaxing app background"
+          className="z-0 w-full h-full object-cover"
+          src={netflixCover.src}
+        />
+        <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+          <div className="flex flex-grow gap-2 items-center">
+            <div className="flex flex-col">
+              <p className="text-tiny text-white/60">Non deploy</p>
+            </div>
+          </div>
+          <Button radius="full" size="sm">
+            MERN STACK
+          </Button>
+        </CardFooter>
+      </Card>
+    </div>
   );
 }
