@@ -2,6 +2,7 @@
 import AboutPage from "@/components/(About)/layout";
 import HomePage from "@/components/(Home)/page";
 import ProjectPage from "@/components/(Project)/layout";
+import StatPage from "@/components/(Stats)/Stat";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HomePage />
       <AboutPage />
       <ProjectPage />
+      <StatPage />
     </section>
   );
 }

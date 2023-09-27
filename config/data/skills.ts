@@ -17,13 +17,14 @@ export const skills = [
   },
   {
     title: "Education",
-    value: ["Pinecone academy"],
+    value: ["Pinecone academy", "24th secondary school"],
   },
   {
     title: "Certifications",
     value: [
-      "JavaScript Algorithms and Data Structures (Freecodecamp)",
-      "Software engineer & fullstack developer (Pinecone academy)",
+      "JavaScript DSA (Freecodecamp 2023)",
+      "Full stack developer & engineer (Pinecone academy 2023)",
+      "Scratch programming fundamental (Code club mongolia 2017)",
     ],
   },
 ];
