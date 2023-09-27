@@ -32,8 +32,8 @@ export default function page() {
   return (
     <div className="max-w-6xl w-screen gap-4 grid grid-cols-12 grid-rows-2 mt-40 md:mt-40 mb-40 px-10 xl:px-0">
       {list.map((item, index) => (
-        <Card className="col-span-12 sm:col-span-4 h-fit">
-          <Link key={index} target="_blank" href={item.link}>
+        <Card key={index} className="col-span-12 sm:col-span-4 h-fit">
+          <Link target="_blank" href={item.link}>
             <CardHeader className="absolute z-10 top-1 flex-col !items-start">
               <p className="text-tiny text-gray-700 uppercase font-bold">
                 {item?.title}
