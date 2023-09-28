@@ -4,7 +4,7 @@ import blogCover from "@/public/assets/blogCover.png";
 import nikeCover from "@/public/assets/nikeCover.png";
 import porfolioCover from "@/public/assets/portfolioCover.png";
 import foodCover from "@/public/assets/foodCover.png";
-import netflixCover from "@/public/assets/netflixCover.jpeg";
+import netflixCover from "@/public/assets/netflixCover.jpg";
 
 import React from "react";
 
