@@ -52,7 +52,7 @@ export default function page() {
 
       <Card
         isFooterBlurred
-        className="w-full h-[300px] col-span-12 sm:col-span-5"
+        className="w-full h-[200px] lg:h-[300px] col-span-12 sm:col-span-5"
       >
         <Link target="_blank" href="https://hoollymernapp.web.app">
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
@@ -64,7 +64,7 @@ export default function page() {
             removeWrapper
             isZoomed
             alt="Card example background"
-            className="z-0 w-full h-full  object-cover"
+            className="z-0 object-fill h-full"
             src={foodCover.src}
           />
           <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
@@ -84,7 +84,7 @@ export default function page() {
       </Card>
       <Card
         isFooterBlurred
-        className="w-full h-[300px] col-span-12 sm:col-span-7"
+        className="w-full h-[200px] lg:h-[300px] col-span-12 sm:col-span-7"
       >
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
@@ -95,7 +95,7 @@ export default function page() {
           isZoomed
           removeWrapper
           alt="Relaxing app background"
-          className="z-0 w-full h-full object-cover"
+          className="z-0 w-full h-full object-fill"
           src={netflixCover.src}
         />
         <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
