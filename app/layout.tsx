@@ -1,15 +1,15 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import { Metadata } from "next";
-import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
+import { siteConfig } from "../config/site";
+import { fontSans } from "../config/fonts";
 import { Providers } from "./providers";
-import { Navbar } from "@/components/navbar";
+import { Navbar } from "../components/navbar";
 import clsx from "clsx";
-import cover from "@/public/assets/cover.png";
-import Footer from "@/components/footer";
+import Footer from "../components/footer";
 export const metadata: Metadata = {
+  metadataBase: new URL("https://khasherdene.vercel.app"),
   openGraph: {
-    images: [cover.src],
+    images: ["/assets/cover.png"],
   },
   title: {
     default: siteConfig.name,
@@ -34,9 +34,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta property="og:image" content={cover.src} />
-      </head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",

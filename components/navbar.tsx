@@ -13,21 +13,21 @@ import { Link } from "@nextui-org/link";
 
 import { link as linkStyles } from "@nextui-org/theme";
 
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "../config/site";
 import clsx from "clsx";
 
-import { ThemeSwitch } from "@/components/theme-switch";
-import { TwitterIcon, GithubIcon, LeetcodeIcon } from "@/components/icons";
+import { ThemeSwitch } from "../components/theme-switch";
+import { TwitterIcon, GithubIcon, LeetcodeIcon } from "../components/icons";
 
-import { Logo } from "@/components/icons";
-import { Link as Link2 } from "react-scroll";
+import { Logo } from "../components/icons";
+import { Link as ReactLink } from "react-scroll";
 
 export const Navbar = () => {
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <Link2
+          <ReactLink
             activeClass="active"
             spy={true}
             smooth={true}
@@ -39,12 +39,12 @@ export const Navbar = () => {
           >
             <Logo />
             <p className="font-bold text-inherit">XASH</p>
-          </Link2>
+          </ReactLink>
         </NavbarBrand>
         <ul className="hidden md:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.to}>
-              <Link2
+              <ReactLink
                 activeClass="active"
                 spy={true}
                 smooth={true}
@@ -59,7 +59,7 @@ export const Navbar = () => {
                 color="foreground"
               >
                 {item.label}
-              </Link2>
+              </ReactLink>
             </NavbarItem>
           ))}
         </ul>
@@ -118,7 +118,7 @@ export const Navbar = () => {
               </div>
             ) : (
               <NavbarMenuItem key={`${item}-${index}`}>
-                <Link2
+                <ReactLink
                   activeClass="active"
                   spy={true}
                   smooth={true}
@@ -132,7 +132,7 @@ export const Navbar = () => {
                   color="foreground"
                 >
                   {item.label}
-                </Link2>
+                </ReactLink>
               </NavbarMenuItem>
             )
           )}
