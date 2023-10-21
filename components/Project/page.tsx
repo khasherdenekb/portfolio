@@ -2,9 +2,10 @@
 
 import { Card, CardHeader, CardFooter, Image, Button } from "@nextui-org/react";
 import Link from "next/link";
+import { useWindowSize } from "usehooks-ts";
 
 export default function ProjectPage() {
-  const width = window.innerWidth;
+  const { width } = useWindowSize();
   const list = [
     {
       title: "BLOG",
