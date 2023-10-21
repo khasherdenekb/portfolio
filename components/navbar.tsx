@@ -58,7 +58,7 @@ export const Navbar = () => {
                 )}
                 color="foreground"
               >
-                {item.label}
+                <li>{item.label}</li>
               </ReactLink>
             </NavbarItem>
           ))}

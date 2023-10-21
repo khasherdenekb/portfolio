@@ -47,7 +47,7 @@ export default function ProjectPage() {
 
         <Card
           isFooterBlurred
-          className="w-full h-[300px] col-span-12 sm:col-span-5"
+          className="w-full h-[200px] md:h-[300px] col-span-12 sm:col-span-5"
         >
           <Link target="_blank" href="https://hoollymernapp.web.app">
             <CardHeader className="absolute z-10 flex-col items-start top-1">
@@ -58,20 +58,15 @@ export default function ProjectPage() {
             <Image
               removeWrapper
               isZoomed={width > 768 ? true : false}
-              alt="Card example background"
-              className="z-0 object-fill w-auto h-full"
+              alt="foodCover image"
+              className="z-0 object-fill w-full h-full"
               src="/assets/foodCover.png"
             />
             <CardFooter className="absolute bottom-0 z-10 justify-between bg-white/30 border-t-1 border-zinc-100/50">
               <div>
-                <p className="text-black text-tiny">Click and view.</p>
+                <p className="text-tiny">Click and view.</p>
               </div>
-              <Button
-                className="text-tiny"
-                color="primary"
-                radius="full"
-                size="sm"
-              >
+              <Button className="text-tiny" radius="full" size="sm">
                 MERN STACK
               </Button>
             </CardFooter>
@@ -79,7 +74,7 @@ export default function ProjectPage() {
         </Card>
         <Card
           isFooterBlurred
-          className="w-full h-[300px]  col-span-12 sm:col-span-7"
+          className="w-full h-[250px] md:h-[300px]  col-span-12 sm:col-span-7"
         >
           <CardHeader className="absolute z-10 flex-col items-start top-1">
             <p className="font-bold uppercase text-tiny text-white/60">
@@ -89,7 +84,7 @@ export default function ProjectPage() {
           <Image
             isZoomed={width > 768 ? true : false}
             removeWrapper
-            alt="Relaxing app background"
+            alt="netflix cover image"
             className="z-0 object-fill w-full h-full"
             src="/assets/netflixCover.jpg"
           />

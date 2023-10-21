@@ -8,7 +8,7 @@ export default function AboutPage() {
       <div className="flex flex-col-reverse max-w-6xl gap-20 py-40 md:flex-row lg:gap-10">
         <div className="flex flex-col items-center justify-center w-full px-10 h-72 md:h-96 xl:px-0">
           <Image
-            className="object-cover w-auto h-auto"
+            className="object-cover w-full h-full"
             alt="code photo"
             src="/assets/coding.webp"
           />
@@ -24,13 +24,15 @@ export default function AboutPage() {
               <Tab key={item.title} title={item.title}>
                 <Card>
                   <CardBody>
-                    {item.value.map((el, key) => {
-                      return (
-                        <li className="font-medium " key={key}>
-                          {el}
-                        </li>
-                      );
-                    })}
+                    <ul>
+                      {item.value.map((el, key) => {
+                        return (
+                          <li className="font-medium list-disc" key={key}>
+                            {el}
+                          </li>
+                        );
+                      })}
+                    </ul>
                   </CardBody>
                 </Card>
               </Tab>

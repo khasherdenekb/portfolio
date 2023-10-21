@@ -24,7 +24,7 @@ const HomePage = () => {
       </div>
       <div className="relative flex flex-col items-center justify-center w-full px-10 h-72 md:h-96 xl:px-0">
         <Image
-          className="object-cover px-10"
+          className="object-cover w-full h-full px-10"
           alt="coding room"
           src="/assets/coding-room.jpeg"
           layout="fill"
