@@ -4,6 +4,7 @@ import { Card, CardHeader, CardFooter, Image, Button } from "@nextui-org/react";
 import Link from "next/link";
 
 export default function ProjectPage() {
+  const width = window.innerWidth;
   const list = [
     {
       title: "BLOG",
@@ -23,20 +24,20 @@ export default function ProjectPage() {
   ];
   return (
     <section id="projects">
-      <div className="max-w-6xl w-screen gap-4 grid grid-cols-12 grid-rows-2 mt-40 md:mt-40 mb-40 px-10 xl:px-0">
+      <div className="grid w-screen max-w-6xl grid-cols-12 grid-rows-2 gap-4 px-10 py-40 xl:px-0">
         {list.map((item, index) => (
           <Card key={index} className="col-span-12 sm:col-span-4 h-fit">
             <Link target="_blank" href={item.link}>
               <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-                <p className="text-tiny text-violet-700 uppercase font-bold">
+                <p className="font-bold uppercase text-tiny text-violet-700">
                   {item?.title}
                 </p>
               </CardHeader>
               <Image
-                isZoomed
+                isZoomed={width > 768 ? true : false}
                 removeWrapper
                 alt="Card background"
-                className="z-0 w-full h-full object-cover"
+                className="z-0 object-cover w-full h-full"
                 src={item.img}
               />
             </Link>
@@ -45,22 +46,22 @@ export default function ProjectPage() {
 
         <Card
           isFooterBlurred
-          className="w-full h-[200px] lg:h-[300px] col-span-12 sm:col-span-5"
+          className="w-full h-[300px] col-span-12 sm:col-span-5"
         >
           <Link target="_blank" href="https://hoollymernapp.web.app">
-            <CardHeader className="absolute z-10 top-1 flex-col items-start">
-              <p className="text-tiny text-white/60 uppercase font-bold">
+            <CardHeader className="absolute z-10 flex-col items-start top-1">
+              <p className="font-bold uppercase text-tiny text-white/60">
                 FOOD DELIVERY
               </p>
             </CardHeader>
             <Image
               removeWrapper
-              isZoomed
+              isZoomed={width > 768 ? true : false}
               alt="Card example background"
-              className="z-0 object-fill h-full"
+              className="z-0 object-fill w-auto h-full"
               src="/assets/foodCover.png"
             />
-            <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+            <CardFooter className="absolute bottom-0 z-10 justify-between bg-white/30 border-t-1 border-zinc-100/50">
               <div>
                 <p className="text-black text-tiny">Click and view.</p>
               </div>
@@ -77,22 +78,22 @@ export default function ProjectPage() {
         </Card>
         <Card
           isFooterBlurred
-          className="w-full h-[200px] lg:h-[300px] col-span-12 sm:col-span-7"
+          className="w-full h-[300px]  col-span-12 sm:col-span-7"
         >
-          <CardHeader className="absolute z-10 top-1 flex-col items-start">
-            <p className="text-tiny text-white/60 uppercase font-bold">
+          <CardHeader className="absolute z-10 flex-col items-start top-1">
+            <p className="font-bold uppercase text-tiny text-white/60">
               Netflix clone
             </p>
           </CardHeader>
           <Image
-            isZoomed
+            isZoomed={width > 768 ? true : false}
             removeWrapper
             alt="Relaxing app background"
-            className="z-0 w-full h-full object-fill"
+            className="z-0 object-fill w-full h-full"
             src="/assets/netflixCover.jpg"
           />
-          <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
-            <div className="flex flex-grow gap-2 items-center">
+          <CardFooter className="absolute bottom-0 z-10 bg-black/40 border-t-1 border-default-600 dark:border-default-100">
+            <div className="flex items-center flex-grow gap-2">
               <div className="flex flex-col">
                 <p className="text-tiny text-white/60">Non deploy</p>
               </div>

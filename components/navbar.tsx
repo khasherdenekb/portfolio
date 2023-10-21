@@ -34,14 +34,14 @@ export const Navbar = () => {
             offset={0}
             duration={300}
             delay={50}
-            className="flex justify-start items-center gap-1 cursor-pointer"
+            className="flex items-center justify-start gap-1 cursor-pointer"
             to="home"
           >
             <Logo />
             <p className="font-bold text-inherit">XASH</p>
           </ReactLink>
         </NavbarBrand>
-        <ul className="hidden md:flex gap-4 justify-start ml-2">
+        <ul className="justify-start hidden gap-4 ml-2 md:flex">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.to}>
               <ReactLink
@@ -69,7 +69,7 @@ export const Navbar = () => {
         className="hidden md:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden md:flex gap-2">
+        <NavbarItem className="hidden gap-2 md:flex">
           <Link
             isExternal
             href={siteConfig.links.linkedin}
@@ -91,7 +91,7 @@ export const Navbar = () => {
           <Link isExternal href={siteConfig.links.linktree}>
             <Button
               radius="full"
-              className="bg-gradient-to-tr from-violet-500 to-blue-500 text-white shadow-lg"
+              className="text-white shadow-lg bg-gradient-to-tr from-violet-500 to-blue-500"
             >
               LinkTree 🌳
             </Button>
@@ -99,7 +99,7 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="md:hidden basis-1 pl-4" justify="end">
+      <NavbarContent className="pl-4 md:hidden basis-1" justify="end">
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
           <GithubIcon className="text-default-500" />
         </Link>
@@ -108,7 +108,7 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+        <div className="flex flex-col gap-2 mx-4 mt-2">
           {siteConfig.navMenuItems.map((item, index) =>
             item.external ? (
               <div key={`${item}-${index}`}>

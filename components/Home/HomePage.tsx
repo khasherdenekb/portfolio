@@ -1,20 +1,20 @@
 "use client";
-import { Image } from "@nextui-org/react";
+import Image from "next/image";
 
 const HomePage = () => {
   return (
-    <section className="flex flex-col md:flex-row max-w-6xl gap-10 md:mt-40 mb-40">
-      <div className="w-full text-center md:text-left px-10 xl:px-0">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+    <section className="flex flex-col max-w-6xl gap-10 py-10 md:py-40 md:flex-row">
+      <div className="w-full px-10 text-center md:text-left xl:px-0">
+        <h1 className="py-2 text-3xl font-bold md:text-4xl lg:text-5xl">
           Hi there, 👋🏻 I'm
         </h1>
-        <h1 className="text-gradient_blue-purple text-4xl md:text-4xl lg:text-5xl font-medium mb-4 ">
+        <h1 className="py-2 text-4xl font-medium text-gradient_blue-purple md:text-4xl lg:text-5xl ">
           Khash-Erdene
         </h1>
-        <h1 className="text-2xl md:text-2xl mb-4 ">
+        <h1 className="py-2 text-2xl md:text-2xl ">
           Software Engineer based in Ulaanbaatar, Mongolia
         </h1>
-        <h2 className="text-lg md:text-lg mt-4 text-gray-400">
+        <h2 className="py-4 text-lg text-gray-400 md:text-lg">
           I am a fullstack web and mobile software developer and engineer, also
           working on some software development projects. Day by day, I'm
           learning and improving myself. I'm passionate about software
@@ -22,11 +22,12 @@ const HomePage = () => {
           on new exciting and challenging projects.
         </h2>
       </div>
-      <div className="w-full flex flex-col justify-center items-center md:h-96 px-10 xl:px-0">
+      <div className="relative flex flex-col items-center justify-center w-full px-10 h-72 md:h-96 xl:px-0">
         <Image
-          className="w-full object-cover"
-          alt="code photo"
+          className="object-cover px-10"
+          alt="coding room"
           src="/assets/coding-room.jpeg"
+          layout="fill"
         />
       </div>
     </section>

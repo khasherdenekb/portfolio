@@ -1,19 +1,19 @@
 "use client";
-import { Card, CardBody, Image, Tabs, Tab } from "@nextui-org/react";
+import { Card, CardBody, Tabs, Tab, Image } from "@nextui-org/react";
 import { skills } from "../../config/data/skills";
 
 export default function AboutPage() {
   return (
     <section id="about">
-      <div className="flex flex-col-reverse md:flex-row max-w-6xl gap-10 md:mt-40 mb-40">
-        <div className="w-full flex flex-col justify-center items-center md:h-[400px] px-10 xl:px-0">
+      <div className="flex flex-col-reverse max-w-6xl gap-20 py-40 md:flex-row lg:gap-10">
+        <div className="flex flex-col items-center justify-center w-full px-10 h-72 md:h-96 xl:px-0">
           <Image
-            className="w-full h-full object-cover"
+            className="object-cover w-auto h-auto"
             alt="code photo"
             src="/assets/coding.webp"
           />
         </div>
-        <div className="flex  gap-10 flex-col w-full px-10 xl:px-0 h-96">
+        <div className="flex flex-col w-full gap-10 px-10 xl:px-0 h-96">
           <Tabs
             key="underlined"
             variant="underlined"
@@ -26,7 +26,7 @@ export default function AboutPage() {
                   <CardBody>
                     {item.value.map((el, key) => {
                       return (
-                        <li className=" font-medium" key={key}>
+                        <li className="font-medium " key={key}>
                           {el}
                         </li>
                       );

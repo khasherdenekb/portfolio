@@ -9,5 +9,5 @@
 }
 
 .text-gradient_blue-purple {
-  @apply bg-gradient-to-r from-pink-400 via-teal-300 to-sky-700 bg-clip-text text-transparent;
+  @apply text-transparent bg-gradient-to-r from-pink-400 via-teal-300 to-sky-700 bg-clip-text;
 }
